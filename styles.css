@@ -28,6 +28,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+}
+#nav h1::after{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  content: "©️";
+  font-size: 1.3vw;
+  font-weight: 100;
+  /* color: red; */
+  bottom: 10px;
+  position: relative;
+}
+#nav h1::before{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  content: "model management";
+  display: flex;
+  font-size: .8vw;
+  font-weight: 100;
+  /* color: red; */
+  /* bottom: 10px; */
+  top: 80px;
+  left: 160px;
+  position: absolute;
 }
 #nav h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -311,4 +333,40 @@ border-radius: 50%;
   opacity: 1;
 
   right: 10%;
+}
+#marque{
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+   padding: 1vw;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 210px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    
+}
+#marque h1{
+  letter-spacing: 2px;
+  font-family: hello;
+  display: inline-block;
+  -webkit-text-stroke: 2px black;
+   font-size: 3vw;
+   white-space: hidden;
+   font-weight: bolder;
+   color: transparent;
+   /* background-color: blue; */
+   margin-right: 16px;
+   animation: move 10s linear 0s infinite ;
+}
+@keyframes move {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+#page4{
+  height: 100%;
+  width: 100%;
 }
